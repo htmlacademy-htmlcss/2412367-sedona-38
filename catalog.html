@@ -58,86 +58,192 @@
 
 
 
-    <main class="main-index">
+    <main class="main-inner">
+        <header class="inner-header">
+            <h1 class="inner-header-title">Гостиницы Седона</h1>
 
-      <img class="welcome-to-hills" src="#" alt="Горы Седоны">
-      <h1 class="visually-hidden">Седона</h1>
-
-      <section class="info-sedona">
-        <h2 class="visually-hidden">Причины поездки в Седону</h2>
-        <h3 class="reasons">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
-        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        <ul class="reasons-list">
-          <li class="reasons-list-item">
-            <h4>Настоящий городок</h4>
-            <img src="#" alt="Вид на дома в Седоне">
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </li>
-          <li class="reasons-list-item">
-            <h4>Небольшая площадь</h4>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="reasons-list-item">
-            <h4>красивая дорога</h4>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="reasons-list-item">
-            <h4>мало туристов</h4>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-          <li class="reasons-list-item">
-            <h4>там есть мост дьявола</h4>
-            <img src="#" alt="фоторгафия моста дьявола">
-            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          </li>
-        </ul>
-      </section>
-
-      <section>
-
-        <h2 class="visually-hidden">Что вас ждет в Седоне</h2>
-        <h3>Приезжайте в Седону отдохнуть в комфорте и уюте!</h3>
-        <p>Опытный персонал и качественное обслуживание!</p>
-        <ul>
-
-          <li>
-            <h4>Жилье</h4>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li>
-            <h4>Еда</h4>
-            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li>
-            <h4>Сувениры</h4>
-            <p>Не только китайского, но и настоящего местного производства!</p>
-          </li>
-
-        </ul>
-
-      </section>
-
-      <section class="search">
-
-        <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <h3>Заинтересовались?</h3>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Поиск гостиницы в Седоне</span>
-        </button>
-      </section>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Каталог</a>
+            </li>
+          </ul>
 
 
-      <section class="subscribes">
-        <h2 class="visually-hidden">подписка на рассылку</h2>
-        <h3>Подпишитесь на рассылку</h3>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <label>
-          <input type="email" value="Ваш Email" name="email">
-          <input type="submit" name="Подписаться">
-        </label>
+        <section class="catalog-products">
+            <h2 class="visually-hidden">Список товаров с фильтрами</h2>
 
-      </section>
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+
+                <fieldset class="catalog-filter-group">
+                    <legend class="catalog-filter-title">Инфраструктура:</legend>
+
+                        <label class="control">
+                            <input class="control-input" type="checkbox" name="pool" checked>
+
+                            Бассейн
+                        </label>
+                        <label class="control">
+                            <input class="control-input" type="checkbox" name="parking" checked>
+
+                            Парковка
+                        </label>
+                        <label class="control">
+                            <input class="control-input" type="checkbox" name="wi-fi">
+
+                            WI-FI
+                        </label>
+                  </fieldset>
+
+                  <fieldset class="catalog-filter-group">
+                    <legend class="catalog-filter-title">Тип жилья:</legend>
+                    <label class="control">
+                        <input class="control-input" type="radio" name="group-hotels" checked>
+
+                        Гостиница
+                    </label>
+
+                    <label class="control">
+                        <input class="control-input" type="radio" name="group-hotels">
+
+                        Мотель
+                    </label>
+
+                    <label class="control">
+                        <input class="control-input" type="radio" name="group-hotels">
+
+                        Апартаменты
+                    </label>
+                </fieldset>
+
+                <fieldset class="price-filter-group">
+                    <legend class="price-filter-title">Тип жилья:</legend>
+
+                </fieldset>
+
+
+
+                <button class="button" type="submit">Показать</button>
+                <button class="button" type="submit">Сбросить</button>
+              </form>
+            </section>
+
+        </header>
+
+        <section class="catalog">
+          <div>
+          <h2 class="visually-hidden">Каталог гостиниц</h2>
+          <p>Найдено гостиниц:38</p>
+
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="expensive">Сначала дорогое</option>
+          <option value="popular">Сначала популярное</option>
+        </select>
+
+        <a href="#" class="button button-black">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать слайды</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+
+      </div>
+
+      <section class="catalog">
+
+      <div class="catalog-item">
+      <div class="hotel-card">
+        <a class="hotel-card-picture" href="product.html">
+          <img class="hotel-card-image" src="#" alt="">
+          <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+        </a>
+        <div>
+        <span>Гостиница</span>
+        <b>От 4000 ₽</b>
+        </div>
+        <div class="action-card">
+          <a class="hotel-card-button button-buy" href="#">Подробнее</a>
+          <a class="hotel-card-button button-favorites">В избранное</a>
+        </div>
+        <div class="rating-card">
+
+          <span>Рейтинг: 8,5</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-item">
+      <div class="hotel-card">
+        <a class="hotel-card-picture" href="product.html">
+          <img class="product-card-image" src="#" alt="">
+          <h3 class="product-card-title">Villas at Poco Diablo</h3>
+        </a>
+      <div>
+        <span>Гостиница</span>
+        <b>От 5000 ₽</b>
+      </div>
+        <div class="action-card">
+          <a class="hotel-card-button button-buy" href="#">Подробнее</a>
+          <a class="hotel-card-button button-favorites">В избранное</a>
+        </div>
+        <div class="rating-card">
+
+          <span>Рейтинг: 8,5</span>
+        </div>
+      </div>
+      </div>
+
+      <div class="catalog-item">
+        <div class="hotel-card">
+          <a class="hotel-card-picture" href="product.html">
+            <img class="product-card-image" src="#" alt="">
+            <h3 class="product-card-title">Desert Quail Inn</h3>
+          </a>
+        <div>
+          <span>Гостиница</span>
+          <b>От 2500 ₽</b>
+        </div>
+          <div class="action-card">
+            <a class="hotel-card-button button-buy" href="#">Подробнее</a>
+            <a class="hotel-card-button button-favorites">В избранное</a>
+          </div>
+          <div class="rating-card">
+
+            <span>Рейтинг: 8,5</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+          <div class="hotel-card">
+            <a class="hotel-card-picture" href="product.html">
+              <img class="product-card-image" src="#" alt="">
+              <h3 class="product-card-title">GreenTree Inn</h3>
+            </a>
+          <div>
+            <span>Гостиница</span>
+            <b>От 1500 ₽</b>
+          </div>
+            <div class="action-card">
+              <a class="hotel-card-button button-buy" href="#">Подробнее</a>
+              <a class="hotel-card-button button-favorites">В избранное</a>
+            </div>
+            <div class="rating-card">
+
+              <span>Рейтинг: 8,5</span>
+            </div>
+          </div>
+        </div>
+    </section>
+
+        </section>
+
     </main>
 
 
