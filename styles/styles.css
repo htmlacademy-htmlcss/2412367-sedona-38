@@ -111,7 +111,7 @@ color:#ffffff;
 
 }
 
-.index-columns-item,{
+.index-columns-item{
 
   background: rgba(131, 179, 211, 0.2);
 
@@ -126,4 +126,67 @@ color:#ffffff;
   color:#000000;
   text-align: center;
   text-decoration: none;
+}
+
+.subscribes-button{
+
+font-size: 20px;
+line-height: 36px;
+font-weight: 700;
+
+}
+
+.inner-header-title{
+
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+
+}
+
+.breadcrumbs-link{
+
+  font-size: 16px;
+  line-height: 21px;
+
+}
+
+.catalog-filter-title{
+
+
+  font-size: 20px;
+  line-height: 14px;
+  font-weight: 700;
+
+}
+
+.control{
+
+
+  font-size: 18px;
+  line-height: 23px;
+
+}
+
+.searched{
+
+font-size: 30px;
+line-height: 36px;
+font-weight: 700;
+
+}
+
+.price{
+
+font-size: 18px;
+line-height: 21px;
+
+}
+
+.hotel-card-button{
+
+font-size: 16px;
+line-height: 20px;
+font-weight: 700;
+
 }
