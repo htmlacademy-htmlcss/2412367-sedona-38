@@ -23,7 +23,6 @@ body{
 font-family: "PT Sans", sans-serif;
 font-size: 18px;
 line-height: 21px;
-background-color: #82B3D3;
 color: #000000;
 
 }
@@ -56,4 +55,75 @@ color: #000000;
 background-size: 100% auto;
 text-align: center;
 
+}
+
+.h3-title.reasons{
+
+  font-size: 30px;
+  line-height: 26px;
+  font-weight: 700;
+
+}
+
+.explanation-reasons{
+
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+
+}
+
+.h3-title{
+
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+.light-text{
+
+color:#ffffff;
+background:#82B3D3;
+
+}
+
+
+.subscribe-item{
+font-size: 30px;
+line-height: 26px;
+font-weight: 700;
+color:#ffffff;
+}
+.subscribe-promise{
+
+  font-size: 22px;
+  line-height: 26px;
+  color:#ffffff;
+
+}
+
+.index-column,.advantages-columns-item{
+
+  background: rgba(131, 179, 211, 0.12);
+
+}
+
+.index-columns-item,{
+
+  background: rgba(131, 179, 211, 0.2);
+
+}
+
+.contacts-phone{
+
+
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  color:#000000;
+  text-align: center;
+  text-decoration: none;
 }
