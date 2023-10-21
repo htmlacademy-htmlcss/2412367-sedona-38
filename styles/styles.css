@@ -144,7 +144,7 @@ background-color: #82B3D3;
   text-transform: capitalize;
 }
 
-.button-buy,.button-favorites{
+.button-small{
   font-size: 16px;
   line-height: 20px;
   color: inherit;
