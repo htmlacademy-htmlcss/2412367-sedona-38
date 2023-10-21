@@ -85,6 +85,14 @@ color: #333;
 background-color: #82B3D3;
 }
 
+.reasons-card-secondary{
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.reasons-card{
+  background: rgba(131, 179, 211, 0.2);
+}
+
 .subscribes{
   color: #fff;
   background-image: url("../images/subscribe-background.jpg");
@@ -106,6 +114,8 @@ background-color: #82B3D3;
   text-align: center;
   text-decoration: none;
 }
+
+
 
 /*     catalog.html        */
 
