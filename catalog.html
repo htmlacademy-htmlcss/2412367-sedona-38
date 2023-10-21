@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
@@ -9,8 +10,9 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <a class="navigation-link" href="#">
-          <img src="images/logotype.png" alt="Логотип Седона" />
+
+        <a class="navigation-logotype">
+          <img src="images/logotype.png" widht="140" height="70" alt="Логотип Седона" />
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -24,31 +26,21 @@
           </li>
         </ul>
 
-        <ul class="main-navigation-list navigation-list-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+        <ul class="navigation-list-user">
+          <li class="navigation-item-user">
+            <a class="navigation-link-user" href="#">
               <span class="visually-hidden"> Поиск </span>
-              <img
-                src="images/icons/search.svg"
-                widht="18"
-                height="18"
-                alt="Поиск"
-              />
+              <img src="images/icons/search.svg" widht="18" height="18" alt="Поиск" />
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-item-user">
+            <a class="navigation-link-user" href="#">
               <span class="visually-hidden"> Лайки </span>
-              <img
-                src="images/icons/like.svg"
-                widht="18"
-                height="17"
-                alt="Лайки"
-              />
+              <img src="images/icons/like.svg" widht="18" height="17" alt="Лайки" />
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-item-user">
+            <a class="navigation-link-user" href="#">
               <span class="visually-hidden"> Хочу сюда! </span>
             </a>
           </li>
@@ -57,8 +49,8 @@
     </header>
 
     <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седона</h1>
+      <header class="header-inner">
+        <h1 class="header-inner-title">Гостиницы Седона</h1>
 
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -72,31 +64,17 @@
         <section class="catalog-products">
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
 
-          <form
-            class="catalog-filter"
-            action="https://echo.htmlacademy.ru/"
-            method="get"
-          >
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
 
               <label class="control">
-                <input
-                  class="control-input"
-                  type="checkbox"
-                  name="pool"
-                  checked
-                />
+                <input class="control-input" type="checkbox" name="pool" checked />
 
                 Бассейн
               </label>
               <label class="control">
-                <input
-                  class="control-input"
-                  type="checkbox"
-                  name="parking"
-                  checked
-                />
+                <input class="control-input" type="checkbox" name="parking" checked />
 
                 Парковка
               </label>
@@ -110,12 +88,7 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <label class="control">
-                <input
-                  class="control-input"
-                  type="radio"
-                  name="group-hotels"
-                  checked
-                />
+                <input class="control-input" type="radio" name="group-hotels" checked />
 
                 Гостиница
               </label>
@@ -152,30 +125,15 @@
 
           <a href="#" class="button button-black">
             <span class="visually-hidden">Показать список</span>
-            <img
-              src="images/icons/list_icon.svg"
-              widht="16"
-              height="14"
-              alt="Лайки"
-            />
+            <img src="images/icons/list_icon.svg" widht="16" height="14" alt="Лайки" />
           </a>
           <a class="button" href="#">
             <span class="visually-hidden">Показать слайды</span>
-            <img
-              src="images/icons/slide_icon.svg"
-              widht="16"
-              height="14"
-              alt="Лайки"
-            />
+            <img src="images/icons/slide_icon.svg" widht="16" height="14" alt="Лайки" />
           </a>
           <a class="button" href="#">
             <span class="visually-hidden">Показать карточки</span>
-            <img
-              src="images/icons/card_icon.svg"
-              widht="16"
-              height="14"
-              alt="Лайки"
-            />
+            <img src="images/icons/card_icon.svg" widht="16" height="14" alt="Лайки" />
           </a>
         </div>
 
@@ -183,13 +141,8 @@
           <div class="catalog-item">
             <div class="hotel-card">
               <a class="hotel-card-picture" href="product.html">
-                <img
-                  class="hotel-card-image"
-                  src="images/catalog/photo-of-hills-1.jpg"
-                  widht="300"
-                  height="212"
-                  alt="Вид из гостиницы Amara Resort & Spa"
-                />
+                <img class="hotel-card-image" src="images/catalog/photo-of-hills-1.jpg" widht="300" height="212"
+                  alt="Вид из гостиницы Amara Resort & Spa" />
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </a>
               <div>
@@ -210,13 +163,8 @@
           <div class="catalog-item">
             <div class="hotel-card">
               <a class="hotel-card-picture" href="product.html">
-                <img
-                  class="product-card-image"
-                  src="images/catalog/photo-of-hills-2.jpg"
-                  widht="300"
-                  height="212"
-                  alt="Вид из гостиницы Villas at Poco Diablo"
-                />
+                <img class="product-card-image" src="images/catalog/photo-of-hills-2.jpg" widht="300" height="212"
+                  alt="Вид из гостиницы Villas at Poco Diablo" />
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </a>
               <div>
@@ -237,13 +185,8 @@
           <div class="catalog-item">
             <div class="hotel-card">
               <a class="hotel-card-picture" href="product.html">
-                <img
-                  class="product-card-image"
-                  src="images/catalog/photo-of-hills-3.jpg"
-                  widht="300"
-                  height="212"
-                  alt="Вид из гостиницы Desert Quail Inn"
-                />
+                <img class="product-card-image" src="images/catalog/photo-of-hills-3.jpg" widht="300" height="212"
+                  alt="Вид из гостиницы Desert Quail Inn" />
                 <h3 class="product-card-title">Desert Quail Inn</h3>
               </a>
               <div>
@@ -264,13 +207,8 @@
           <div class="catalog-item">
             <div class="hotel-card">
               <a class="hotel-card-picture" href="product.html">
-                <img
-                  class="product-card-image"
-                  src="images/catalog/photo-of-hills-4.jpg"
-                  widht="300"
-                  height="212"
-                  alt="Вид из гостиницы GreenTree Inn"
-                />
+                <img class="product-card-image" src="images/catalog/photo-of-hills-4.jpg" widht="300" height="212"
+                  alt="Вид из гостиницы GreenTree Inn" />
                 <h3 class="product-card-title">GreenTree Inn</h3>
               </a>
               <div>
@@ -295,34 +233,19 @@
       <ul class="social-club">
         <li class="vkontakte">
           <a href="#">
-            <img
-              src="images/icons/vkontakte.svg"
-              widht="24"
-              height="14"
-              alt="вконтакте"
-            />
+            <img src="images/icons/vkontakte.svg" widht="24" height="14" alt="вконтакте" />
           </a>
         </li>
 
         <li class="telegramm">
           <a href="#">
-            <img
-              src="images/icons/telegramm.svg"
-              widht="18"
-              height="15"
-              alt="телеграмм"
-            />
+            <img src="images/icons/telegramm.svg" widht="18" height="15" alt="телеграмм" />
           </a>
         </li>
 
         <li class="youtube">
           <a href="#">
-            <img
-              src="images/icons/youtube.svg"
-              widht="22"
-              height="17"
-              alt="ютуб"
-            />
+            <img src="images/icons/youtube.svg" widht="22" height="17" alt="ютуб" />
           </a>
         </li>
       </ul>
@@ -332,13 +255,9 @@
       </address>
 
       <a class="link-academy" href="#">
-        <img
-          src="images/logo_htmlacademy.svg"
-          widht="115"
-          height="33"
-          alt="Логотип html-academy"
-        />
+        <img src="images/logo_htmlacademy.svg" widht="115" height="33" alt="Логотип html-academy" />
       </a>
     </footer>
   </body>
+
 </html>
