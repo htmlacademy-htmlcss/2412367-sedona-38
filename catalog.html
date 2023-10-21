@@ -26,7 +26,7 @@
           </li>
         </ul>
 
-        <ul class="navigation-list-user">
+        <ul class="navigation-list">
           <li class="navigation-item-user">
             <a class="navigation-link-user" href="#">
               <span class="visually-hidden"> Поиск </span>
@@ -41,7 +41,7 @@
           </li>
           <li class="navigation-item-user">
             <a class="navigation-link-user" href="#">
-              <span class="visually-hidden"> Хочу сюда! </span>
+              <span /*class="visually-hidden"*/> Хочу сюда! </span>
             </a>
           </li>
         </ul>
@@ -106,6 +106,22 @@
               </label>
             </fieldset>
 
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <form class="catalog-price-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="min-price-fork-form">
+                  <input type="text" value="0" name="min-price" />
+                </label>
+              </form>
+
+              <form class="price-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="max-price-fork-form">
+                  <input type="text" value="10000" name="max-price" />
+                </label>
+              </form>
+
+            </fieldset>
+
             <button class="button" type="submit">Показать</button>
             <button class="button" type="submit">Сбросить</button>
           </form>
@@ -165,7 +181,7 @@
               <a class="hotel-card-picture" href="product.html">
                 <img class="product-card-image" src="images/catalog/photo-of-hills-2.jpg" widht="300" height="212"
                   alt="Вид из гостиницы Villas at Poco Diablo" />
-                <h3 class="product-card-title">Villas at Poco Diablo</h3>
+                <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
               <div>
                 <span class="price">Гостиница</span>
@@ -187,7 +203,7 @@
               <a class="hotel-card-picture" href="product.html">
                 <img class="product-card-image" src="images/catalog/photo-of-hills-3.jpg" widht="300" height="212"
                   alt="Вид из гостиницы Desert Quail Inn" />
-                <h3 class="product-card-title">Desert Quail Inn</h3>
+                <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
               <div>
                 <span class="price">Гостиница</span>
@@ -209,7 +225,7 @@
               <a class="hotel-card-picture" href="product.html">
                 <img class="product-card-image" src="images/catalog/photo-of-hills-4.jpg" widht="300" height="212"
                   alt="Вид из гостиницы GreenTree Inn" />
-                <h3 class="product-card-title">GreenTree Inn</h3>
+                <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
               <div>
                 <span class="price">Гостиница</span>
