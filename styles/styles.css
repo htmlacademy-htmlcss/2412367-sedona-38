@@ -254,7 +254,35 @@ body{
 
 /*         catalog flex     */
 
+
+.main-inner{
+width: 1200px;
+margin: 0 auto;
+}
+
 .navigation-logotype{
   width: 140px;
   margin-right: 28px;
+  margin-left: 70px;
+}
+
+.catalog-products{
+  display: flex;
+}
+
+.breadcrumbs{
+  display: flex;
+}
+
+.catalog-filter{
+display: flex;
+}
+
+.catalog{
+display: flex;
+flex-wrap: wrap;
+}
+
+.catalog-item{
+  margin-right: 20px;
 }
