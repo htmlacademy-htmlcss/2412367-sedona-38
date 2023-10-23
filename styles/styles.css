@@ -22,11 +22,23 @@ display: none;
   background-color: #fff;
 }
 
+html{
+  height: 100%;
+}
+
 body{
-font-family: "PT Sans", sans-serif;
-font-size: 18px;
-line-height: 21px;
-color: #000000;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .navigation-link{
@@ -70,7 +82,7 @@ color: #000000;
 }
 
 .explanations-card{
-color: #333;
+  color: #333;
 }
 
 .h3-title{
@@ -82,7 +94,9 @@ color: #333;
 
 .reasons-card-primary{
   color: #fff;
-background-color: #82B3D3;
+  background-color: #82B3D3;
+  text-align: center;
+  padding: 112.5px 40px;
 }
 
 .reasons-card-secondary{
@@ -95,6 +109,8 @@ background-color: #82B3D3;
 
 .subscribes{
   color: #fff;
+  width: 1200px;
+  height: 415px;
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -150,4 +166,95 @@ background-color: #82B3D3;
   color: inherit;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+
+/*     flex-container       */
+
+/*     navigation           */
+
+.navigation{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list{
+  width: 614px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list-user{
+  width: 308px;
+  margin-left: auto;
+}
+/*        main             */
+
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hills-of-sedona{
+  display: block;
+  margin: 0 auto;
+}
+
+.reasons-list,.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.reasons-item,.advantages-item{
+  width: 400px;
+  height: 385px;
+}
+
+.reasons-with-image{
+  display: flex;
+  width: 1200px;
+}
+
+.reasons-card-container,.advantages-card-container{
+  padding: 112px 40px;
+}
+
+/*     footer     */
+
+.main-footer{
+  width:1200px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  width: 1060px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.social-club {
+ /* display: flex;*/
+  width: 142px;
+}
+
+.contacts-container{
+  margin-left: 41px;
+  width:720px;
+}
+
+.link-academy-container{
+  margin-left: 41px;
+  width: 115px;
+}
+
+/*         catalog flex     */
+
+.navigation-logotype{
+  width: 140px;
+  margin-right: 28px;
 }

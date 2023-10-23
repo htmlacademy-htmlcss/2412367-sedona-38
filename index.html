@@ -11,10 +11,11 @@
     <div class="container-index">
       <header class="main-header">
         <nav class="navigation">
-
+          <div class="navigation-logotype">
           <a class="navigation-logotype">
             <img src="images/logotype.png" width="140" height="70" alt="Логотип Седона" />
           </a>
+        </div>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="#"> Главная </a>
@@ -27,7 +28,7 @@
             </li>
           </ul>
 
-          <ul class="navigation-list">
+          <ul class="navigation-list navigation-list-user">
             <li class="navigation-item-user">
               <a class="navigation-link-user" href="#">
                 <span class="visually-hidden"> Поиск </span>
@@ -49,7 +50,8 @@
         </nav>
       </header>
 
-      <main class="main-index">
+      <main class="main-index main-container">
+        <div class="page-container">
         <img class="hills-of-sedona" src="images/welcome.svg" width="458" height="352"
           alt="To the gorgeous. Sedona. Because the grand canyon sucks" />
         <h1 class="visually-hidden">Седона</h1>
@@ -63,32 +65,32 @@
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
           </p>
           <ul class="reasons-list">
-            <li class="reasons-item">
+            <li class="reasons-item reasons-with-image">
               <div class="reasons-list-card reasons-card-primary">
                 <h3 class="h3-title">Настоящий городок</h3>
                 <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img src="images/hotel-photo.jpg" width="800" height="385" alt="Вид на дома в Седоне" />
             </li>
-            <li class="reasons-item">
-              <div class="reasons-card-secondary">
+            <li class="reasons-item reasons-card-secondary">
+              <div class="reasons-card-container">
                 <h3 class="h3-title">Небольшая площадь</h3>
                 <p class="explanations-card">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
-            <li class="reasons-item">
-              <div class="reasons-card reasons-card-secondary">
+            <li class="reasons-item reasons-card reasons-card-secondary">
+              <div class="reasons-card-container">
                 <h3 class="h3-title">Красивая дорога</h3>
                 <p class="explanations-card">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
-            <li class="reasons-item">
-              <div class="reasons-card-secondary">
+            <li class="reasons-item reasons-card-secondary">
+              <div class="reasons-card-container">
                 <h3 class="h3-title">Мало туристов</h3>
                 <p class="explanations-card">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
-            </li>
-            <li class="reasons-item">
+              </li>
+            <li class="reasons-item reasons-with-image ">
               <div class="reasons-list-card reasons-card-primary">
                 <h3 class="h3-title">там есть мост дьявола</h3>
                 <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -109,24 +111,27 @@
           <div class="advantages-container">
             <ul class="advantages-list">
               <li class="advantages-item">
-                <div class="advantages-list-card reasons-card-secondary">
+                <div class="advantages-card-container reasons-card-secondary">
                 <h3 class=" h3-title">Жилье</h3>
                 <p class="explanations-card">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </div>
               </li>
               <li class="advantages-item">
-                <div class="advantages-list-card">
+                <div class="advantages-card-container">
                 <h3 class="h3-title">Еда</h3>
                 <p class="explanations-card">
                   Всегда заказывайте топовый фирменный бургер, вы не
                   разочаруетесь!
                 </p>
+                </div>
               </li>
               <li class="advantages-item">
-                <div class="advantages-list-card reasons-card-secondary">
+                <div class="advantages-card-container reasons-card-secondary">
                 <h3 class="h3-title">Сувениры</h3>
                 <p class="explanations-card">
                   Не только китайского, но и настоящего местного производства!
                 </p>
+                </div>
               </li>
             </ul>
           </div>
@@ -162,9 +167,11 @@
             </button>
           </div>
         </section>
+      </div>
       </main>
 
       <footer class="main-footer">
+        <div class="footer-container">
         <ul class="social-club">
           <li class="vkontakte">
             <a href="#">
@@ -184,14 +191,17 @@
             </a>
           </li>
         </ul>
-
+        <div class="contacts-container">
         <address class="contacts-address">
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
-
+        </div>
+        <div class="link-academy-container">
         <a class="link-academy" href="#">
           <img src="images/logo_htmlacademy.svg" width="115" height="33" alt="Логотип html-academy" />
         </a>
+      </div>
+      </div>
       </footer>
     </div>
   </body>
