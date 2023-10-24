@@ -174,17 +174,30 @@ body{
 /*     navigation           */
 
 .navigation{
-  display: flex;
+  display: grid;
   width: 1200px;
+  grid-template-columns: 138px 339px;
+  column-gap: 30px;
   margin: 0 auto;
 }
 
+.navigation-logotype{
+padding:0;
+margin:0;
+}
+
 .navigation-list{
+  display: flex;
   width: 614px;
   margin: 0;
   padding: 0;
 }
 
+.navigation-link{
+  display:block;
+  margin: 5px;
+  padding: 15px;
+}
 .navigation-list-user{
   width: 308px;
   margin-left: auto;
@@ -260,12 +273,6 @@ width: 1200px;
 margin: 0 auto;
 }
 
-.navigation-logotype{
-  width: 140px;
-  margin-right: 28px;
-  margin-left: 70px;
-}
-
 .catalog-products{
   display: flex;
 }
@@ -286,3 +293,5 @@ flex-wrap: wrap;
 .catalog-item{
   margin-right: 20px;
 }
+
+/*     micro     */
