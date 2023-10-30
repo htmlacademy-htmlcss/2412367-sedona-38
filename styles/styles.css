@@ -98,10 +98,20 @@ li{
   list-style: none;
 }
 
-.navigation-button-link{
-  padding: 8px 34px;
+.navigation-item-user{
+  display:inline-block;
+  padding: 23px 13px;
+  align-items: center;
 }
 
+.navigation-button{
+  display:inline-block;
+  text-transform: uppercase;
+  background: #756157;
+  padding:8px 34px;
+  border-radius: 4px;
+  color: #fff;
+}
 /*main*/
 
 .hero{
