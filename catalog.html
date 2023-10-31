@@ -31,7 +31,6 @@
                 <a class="navigation-link" href="#"> Гостиницы </a>
               </li>
             </ul>
-
             <ul class="navigation-list navigation-list-user">
               <li class="navigation-item-user">
                 <a class="navigation-link-user" href="#">
@@ -55,8 +54,8 @@
                   />
                 </a>
               </li>
-              <li class="navigation-item-user">
-                <a class="navigation-button-link" href="#">
+              <li>
+                <a class="navigation-button-link navigation-button" href="#">
                   <span> Хочу сюда! </span>
                 </a>
               </li>
@@ -181,15 +180,16 @@
                   </label>
                 </form>
               </fieldset>
-
-              <button class="button-small" type="submit">Показать</button>
-              <button class="button-small" type="submit">Сбросить</button>
+              <div class="filter-button">
+                <button class="button-small" type="submit">Показать</button>
+                <button class="button-small" type="submit">Сбросить</button>
+              </div>
             </form>
           </section>
         </header>
 
         <section class="catalog">
-          <div>
+          <div class="catalog-header">
             <h2 class="visually-hidden">Каталог гостиниц</h2>
             <p class="searched">Найдено гостиниц:38</p>
 
@@ -205,7 +205,7 @@
                 src="images/icons/list_icon.svg"
                 width="16"
                 height="14"
-                alt="Лайки"
+                alt="показ списком"
               />
             </a>
             <a class="button" href="#">
@@ -214,7 +214,7 @@
                 src="images/icons/slide_icon.svg"
                 width="16"
                 height="14"
-                alt="Лайки"
+                alt="показ слайдами"
               />
             </a>
             <a class="button" href="#">
@@ -223,7 +223,7 @@
                 src="images/icons/card_icon.svg"
                 width="16"
                 height="14"
-                alt="Лайки"
+                alt="показ карточками"
               />
             </a>
           </div>
