@@ -62,7 +62,8 @@ body{
   margin: 0 auto;
 }
 
-.navigation-link,.navigation-button-link{
+.navigation-link,.navigation-button{
+  display: block;
   font-weight: 700;
   line-height: 24px;
   font-size: 20px;
@@ -70,6 +71,14 @@ body{
   text-decoration: none;
   text-transform: capitalize;
   text-align: center;
+  padding: 20px 16px;
+}
+
+.navigation-button{
+  background: #756157;
+  padding:8px 34px;
+  border-radius: 4px;
+  color: #fff;
 }
 
 .navigation-link-logotype{
@@ -88,7 +97,6 @@ body{
   padding: 0;
 }
 .navigation-item{
-  padding: 20px 16px;
   list-style: none;
 }
 
@@ -103,20 +111,24 @@ li{
 }
 
 .navigation-item-user{
-  display:inline-block;
+  display:block;
   padding: 23px 13px;
-  align-items: center;
 }
 
+
+
+/*
 .navigation-button{
-  display:inline-block;
+  display:block;
   text-transform: uppercase;
   background: #756157;
   padding:8px 34px;
   border-radius: 4px;
   color: #fff;
   margin: 10px;
-}
+}*/
+
+
 /*main*/
 
 .hero{
@@ -215,7 +227,8 @@ li{
 }
 
 .reasons-card-container,.reasons-card-primary,.advantages-card-container{
-padding: 112px 85px;
+padding: 0 85px;
+min-height: 385px ;
 }
 
 img{
@@ -308,7 +321,7 @@ img{
   max-width: 1060px;
   min-height:50px;
 }
-/*
+
 .vkontakte-container{
   padding: 13px 12px;
   }
@@ -320,7 +333,6 @@ img{
   .youtube-container{
     padding: 12px 13px;
   }
-*/
 
 .social-club{
   display:flex;
