@@ -13,46 +13,50 @@
   font-style: normal;
   font-display: swap;
 }
-
-.visually-hidden{
-display: none;
+/*
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
 }
-
-.container-index,.container-catalog{
-  background-color: #fff;
-  margin: 0 auto;
-  width: 1200px;
-}
+*/
+/*main styles*/
 
 html{
-  height: 100%;
+  height:100%;
 }
 
 body{
-  margin: 0 auto;
-  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  width: 1280px;
+  max-width:1280px;
+  margin:0 auto;
+  height: 100%;
+  background-color: #f2f2f2;
 }
 
-.main-container {
-  flex-grow: 1;
+.main-index{
+  flex-grow:1;
+  text-align: center;
 }
 
-
-.main-header,.main-header-inner{
-  height: 64px;
-  margin: 0 auto;
-}
-
-.navigation{
+.container-index{
   display: flex;
+  flex-direction: column;
+  margin:0 auto;
+  max-width: 1200px;
+  background-color: #fff;
+  min-height: 100%;
+}
+
+li{
+  list-style: none;
 }
 
 .navigation-link,.navigation-button-link{
+  display: block;
   font-weight: 700;
   line-height: 24px;
   font-size: 20px;
@@ -60,36 +64,48 @@ body{
   text-decoration: none;
   text-transform: capitalize;
   text-align: center;
-}
-
-.navigation-link-logotype{
-  margin-right: 30px;
-  margin-left: 70px;
-}
-
-.navigation-list{
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-.navigation-item{
   padding: 20px 16px;
-  list-style: none;
 }
 
-.navigation-list-user{
-  display: flex;
-  margin-left: auto;
-  margin-right: 70px;
-  padding: 0;
-}
-
-li{
-  list-style: none;
+.navigation-link-user{
+  display: block;
 }
 
 .navigation-button-link{
-  padding: 8px 34px;
+  display: block;
+  padding: 8px 50px;
+  color:#fff;
+  background-color: #756157;
+  border-radius: 4px;
+}
+
+.visually-hidden{
+display: none;
+}
+
+.main-header{
+  display:flex;
+  max-width: 1060px;
+  max-height: 64px ;
+  margin: 0 auto;
+  width:100%;
+}
+
+.navigation{
+  display:flex;
+  flex-grow: 1;
+}
+
+.navigation-list,.navigation-list-user{
+  display: flex;
+  margin:0;
+  padding: 0;
+  align-items: center;
+}
+
+.navigation-link-logotype{
+  margin-right: 28px;
+  z-index: 1;
 }
 
 /*main*/
@@ -97,108 +113,122 @@ li{
 .hero{
   background-image: url("../images/hills-of-sedona.jpg");
   background-repeat: no-repeat;
-  background-size: auto auto;
-  text-align: center;
-  height:485px;
-}
-
-.main-index{
-  text-align: center;
-}
-
-.reasons-header{
-  margin: 0;
-  height: 261px;
+  min-height: 485px;
 }
 
 .h2-title{
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700;
-  margin: 0;
+  margin:0;
+  padding: 0;
   margin-bottom: 25px;
-
+  text-transform: uppercase;
 }
 
 .h3-title{
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  text-transform: uppercase;
-  margin: 0;
+  margin:0;
+  padding:0;
   margin-bottom: 62px;
+  text-transform: uppercase;
 }
 
-.reasons-item,.advantages-card-secondary{
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.reasons-card{
-  background: rgba(131, 179, 211, 0.2);
-}
-
-.reasons-explanations,.explanations-advantages,.search-explanations{
+.reasons-explanations,.explanations-advantages,.search-explanations,.subscribe-promise{
   font-size: 22px;
   line-height: 26px;
-  color: #333;
-  margin: 0;
-  padding: 0;
+  color:#333;
+  padding:0;
+  margin:0;
+}
+
+.reasons-header{
+  min-height: 261px ;
+}
+
+.reasons-haeder-container{
+  padding: 69px 274px;
+}
+
+.hills-of-sedona{
+  padding-top: 69px;
 }
 
 .reasons-list{
-  margin: 0;
-  padding: 0;
-  display: flex;
+  display:flex;
   flex-wrap:wrap;
-}
-
-.advantages-list{
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.reasons-card-secondary{
-  max-width: 400px;
+  margin:0;
+  padding:0;
 }
 
 .reasons-with-image{
-  display: flex;
+  display:flex;
+  background-color:#82B3D3;
+  color:#fff;
+  min-height: 385px;
 }
 
-.reasons-card-primary{
-  background: #82B3D3;
-  color:#fff;
+.reasons-image{
+  height:100%;
+}
+
+.reasons-card-secondary,.advantages-item{
+  width: 400px;
+  min-height: 385px;
 }
 
 .explanations-card{
-  margin: 0;
+  margin:0;
+  padding:0;
 }
 
-.reasons-card-container,.reasons-card-primary,.advantages-card-container{
-padding: 112px 85px;
+.reasons-card-container,.reasons-card-primary{
+  padding:125px 85px;
 }
 
-img{
-  height: 100%
+.advantages-header{
+  min-height: 246px;
 }
 
-.search-button{
-  padding: 8px 50px;
-  background: #756157;
-  color: #fff;
-  border-radius: 4px;
-  border: 0;
+.advantages-header-container{
+  height:100%;
+  padding: 64px 347px;
 }
 
-.search-button span{
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
+.advantages-list{
+  display: flex;
+  padding:0;
+  margin:0;
+}
+
+.advantages-card-container{
+  padding: 81px 85px;
 }
 
 .search{
   min-height: 406px;
+}
+
+.search-container{
+  padding:96px 304px;
+}
+
+.search-explanations{
+  margin-bottom: 54px;
+}
+
+.search-button-big{
+  color:#fff;
+  background-color: #756157;
+  padding: 8px 50px;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  border:0;
+  text-transform: uppercase;
 }
 
 .subscribes{
@@ -207,233 +237,3 @@ img{
   background-repeat: no-repeat;
   color: #fff;
 }
-
-.subscribe-promise{
-  font-size: 22px;
-  line-height: 26px;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-.subscribe-container{
-  display: flex;
-}
-
-.subscribe-email{
-  width: 452px;
-  height: 52px;
-  border-radius: 4px 0 0 4px;
-  background: #f2f2f2;
-  border: 0;
-}
-
-.subscribe-button{
-  padding: 8px 50px;
-  background: #82B3D3;
-  color: #fff;
-  border-radius: 0 4px 4px 0;
-  border: 0;
-}
-
-.main-footer{
-  height: 120px;
-}
-
-.footer-container{
-  display:flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 1060px;
-}
-
-.social-club{
-  display:flex;
-}
-
-.contacts-phone{
-  font-style: normal;
-  font-size: 40px;
-  line-height: 40px;
-  color:#000000;
-  text-align: center;
-  text-decoration: none;
-}
-
-/*              catalog                */
-
-.header-inner{
-  background-image: url("../images/filter-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-
-
-.breadcrumbs-link{
-  font-size: 16px;
-  line-height: 21px;
-}
-
-
-
-
-
-
-
-
-
-
-/*     catalog.html        */
-/*
-.header-inner-title{
-  font-size: 60px;
-  line-height: 78px;
-}
-
-.breadcrumbs-link{
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.header-inner{
-  background-image: url("../images/filter-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-
-.hotel-card-picture{
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  color: inherit;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.button-small{
-  font-size: 16px;
-  line-height: 20px;
-  color: inherit;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-
-/*     flex-container       */
-
-/*     navigation           */
-/*
-.navigation{
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.navigation-list{
-  width: 614px;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation-list-user{
-  width: 308px;
-  margin-left: auto;
-}
-/*        main             */
-/*
-.page-container{
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.hills-of-sedona{
-  display: block;
-  margin: 0 auto;
-}
-
-.reasons-list,.advantages-list{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-
-.reasons-item,.advantages-item{
-  width: 400px;
-  height: 385px;
-}
-
-.reasons-with-image{
-  display: flex;
-  width: 1200px;
-}
-
-.reasons-card-container,.advantages-card-container{
-  padding: 112px 40px;
-}
-
-/*     footer     */
-/*
-.main-footer{
-  width:1200px;
-  height: 120px;
-  margin: 0 auto;
-}
-
-.footer-container {
-  display: flex;
-  width: 1060px;
-  height: 50px;
-  margin: 0 auto;
-}
-
-.social-club {
- /* display: flex;*//*
-  width: 142px;
-}
-
-.contacts-container{
-  margin-left: 41px;
-  width:720px;
-}
-
-.link-academy-container{
-  margin-left: 41px;
-  width: 115px;
-}
-
-/*         catalog flex     */
-/*
-
-.main-inner{
-width: 1200px;
-margin: 0 auto;
-}
-
-.navigation-logotype{
-  width: 140px;
-  margin-right: 28px;
-  margin-left: 70px;
-}
-
-.catalog-products{
-  display: flex;
-}
-
-.breadcrumbs{
-  display: flex;
-}
-
-.catalog-filter{
-display: flex;
-}
-
-.catalog{
-display: flex;
-flex-wrap: wrap;
-}
-
-.catalog-item{
-  margin-right: 20px;
-}
-*/
