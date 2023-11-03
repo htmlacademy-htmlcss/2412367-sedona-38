@@ -179,6 +179,15 @@ display: none;
   min-height: 385px;
 }
 
+.reasons-card-secondary,.advantages-card-secondary{
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.reasons-card-thirdy{
+  width: 400px;
+  min-height: 385px;
+  background: rgba(131, 179, 211, 0.2);
+}
 .explanations-card{
   margin:0;
   padding:0;
@@ -236,4 +245,71 @@ display: none;
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   color: #fff;
+}
+.subscribe-promise{
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 54px;
+}
+.subscribe-form-container{
+  display: flex;
+}
+.subscribe-container{
+  padding: 96px 258px;
+}
+.h2-subscribe{
+  margin-bottom: 20px;
+}
+.subscribe-email{
+  width: 452px;
+  height: 52px;
+  border-radius: 4px 0 0 4px;
+  background: #f2f2f2;
+  border: 0;
+}
+.subscribe-button{
+  padding: 8px 50px;
+  background: #82B3D3;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  border: 0;
+}
+
+/*       footer          */
+
+
+.main-footer{
+  max-height: 120px;
+  padding:40px 70px 30px 70px ;
+}
+.footer-container{
+  display:flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1060px;
+  min-height:50px;
+}
+
+.vkontakte-link,.telegramm-link,.youtube-link{
+  display:block;
+  margin: 13px 12px;
+}
+
+
+.social-club{
+  display:flex;
+  margin:0;
+  padding:0;
+  align-content: center;
+}
+.contacts-phone{
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  color:#000000;
+  text-align: center;
+  text-decoration: none;
 }
