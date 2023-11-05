@@ -10,61 +10,58 @@
     <div class="container-index">
       <header class="main-header">
         <nav class="navigation">
-          <div class="navigation-container"><!--
-            <a class="navigation-link-logotype">
+          <!--<div class="navigation-container">-->
+          <a class="navigation-link-logotype">
+            <img
+              class="navigation-logotype"
+              src="images/logotype.png"
+              width="140"
+              height="70"
+              alt="Логотип Седона"
+            />
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#"> Главная </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#"> О седоне </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html"> Гостиницы </a>
+            </li>
+          </ul>
+          <!--</div>-->
+        </nav>
+        <ul class="navigation-list-user">
+          <li class="navigation-item-user">
+            <a class="navigation-link-searched" href="#">
+              <span class="visually-hidden"> Поиск </span>
               <img
-                class="navigation-logotype"
-                src="images/logotype.png"
-                width="140"
-                height="70"
-                alt="Логотип Седона"
+                src="images/icons/search.svg"
+                width="18"
+                height="18"
+                alt="Поиск"
               />
             </a>
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="#"> Главная </a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#"> О седоне </a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="catalog.html"> Гостиницы </a>
-              </li>
-            </ul>
-          -->
-            <ul class="navigation-list navigation-list-user">
-              <li class="navigation-item-user">
-                <a class="navigation-link-user" href="#">
-                  <span class="visually-hidden"> Поиск </span>
-                  <img
-                    src="images/icons/search.svg"
-                    width="18"
-                    height="18"
-                    alt="Поиск"
-                  />
-                </a>
-              </li>
-              <li class="navigation-item-user">
-                <a class="navigation-link-user" href="#">
-                  <span class="visually-hidden"> Лайки </span>
-                  <img
-                    src="images/icons/like.svg"
-                    width="18"
-                    height="17"
-                    alt="Лайки"
-                  />
-                </a>
-              </li>
-              <li>
-                <a class="navigation-button-link navigation-button" href="#">
-                  <span> Хочу сюда! </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+          </li>
+          <li class="navigation-item-user">
+            <a class="navigation-link-likes" href="#">
+              <span class="visually-hidden"> Лайки </span>
+              <img
+                src="images/icons/like.svg"
+                width="18"
+                height="17"
+                alt="Лайки"
+              />
+            </a>
+          </li>
+          <li class="navigation-item-user">
+            <a class="navigation-button-link" href="#"> Хочу сюда! </a>
+          </li>
+        </ul>
       </header>
-<!--
+
       <main class="main-index main-container">
         <div class="page-container">
           <div class="hero">
@@ -80,25 +77,26 @@
 
           <section class="reasons">
             <header class="reasons-header">
-              <div class="reasons-header-container">
-                <h2 class="visually-hidden">Причины поездки в Седону</h2>
-                <p class="h2-title">
-                  Седона — небольшой городок в Аризоне, заслуживающий большего!
-                </p>
-                <p class="reasons-explanations">
-                  Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-                </p>
+              <div class="reasons-haeder-container">
+              <h2 class="visually-hidden">Причины поездки в Седону</h2>
+              <p class="h2-title">
+                Седона — небольшой городок в Аризоне, заслуживающий большего!
+              </p>
+              <p class="reasons-explanations">
+                Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+              </p>
               </div>
             </header>
             <ul class="reasons-list">
               <li class="reasons-item reasons-with-image">
-                <div class="reasons-list-card reasons-card-primary">
+                <div class="reasons-card reasons-card-primary">
                   <h3 class="h3-title">Настоящий городок</h3>
                   <p>
                     Седона — не аттракцион для туристов, там течёт своя жизнь
                   </p>
                 </div>
                 <img
+                  class="reasons-image"
                   src="images/hotel-photo.jpg"
                   width="800"
                   height="385"
@@ -113,30 +111,31 @@
                   </p>
                 </div>
               </li>
-              <li class="reasons-item reasons-card reasons-card-secondary">
+              <li class="reasons-item reasons-card-thirdy">
                 <div class="reasons-card-container">
-                  <h3 class="h3-title">Красивая<br />дорога</h3>
-                  <p class="explanations-card">
-                    Ехать в Седону из Лас-Вегаса совсем не скучно!
-                  </p>
-                </div>
+                <h3 class="h3-title">Красивая<br />дорога</h3>
+                <p class="explanations-card">
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                </p>
+              </div>
               </li>
               <li class="reasons-item reasons-card-secondary">
                 <div class="reasons-card-container">
-                  <h3 class="h3-title">Мало<br />туристов</h3>
-                  <p class="explanations-card">
-                    Большинство едет в Гранд Каньон и толпится там
-                  </p>
-                </div>
+                <h3 class="h3-title">Мало<br />туристов</h3>
+                <p class="explanations-card">
+                  Большинство едет в Гранд Каньон и толпится там
+                </p>
+              </div>
               </li>
               <li class="reasons-item reasons-with-image">
                 <img
+                  class="reasons-image"
                   src="images/bridge-photo.jpg"
                   width="800"
                   height="385"
                   alt="фоторгафия моста дьявола"
                 />
-                <div class="reasons-list-card reasons-card-primary">
+                <div class="reasons-card reasons-card-primary">
                   <h3 class="h3-title">там есть мост дьявола</h3>
                   <p>
                     Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -199,7 +198,7 @@
                 Укажите предполагаемые даты поездки, и мы покажем вам лучшие
                 предложения гостиниц в Седоне
               </p>
-              <button class="search-button" type="button">
+              <button class="search-button-big" type="button">
                 <span>Поиск гостиницы в Седоне</span>
               </button>
             </div>
@@ -243,42 +242,36 @@
           <div class="social-container">
             <ul class="social-club">
               <li class="vkontakte">
-                <div class="vkontakte-container">
-                  <a href="#">
+                  <a class="vkontakte-link" href="#">
                     <img
                       src="images/icons/vkontakte.svg"
                       width="24"
-                      height="14"
+                      height="24"
                       alt="Вконтакте"
                     />
                   </a>
-                </div>
               </li>
 
               <li class="telegramm">
-                <div class="telegramm-container">
-                  <a href="#">
+                  <a class="telegramm-link" href="#">
                     <img
                       src="images/icons/telegramm.svg"
-                      width="18"
-                      height="15"
+                      width="24"
+                      height="24"
                       alt="Телеграмм"
                     />
                   </a>
-                </div>
               </li>
 
               <li class="youtube">
-                <div class="youtube-container">
-                  <a href="#">
+                  <a class="youtube-link" href="#">
                     <img
                       src="images/icons/youtube.svg"
-                      width="22"
-                      height="17"
+                      width="24"
+                      height="24"
                       alt="Ютуб"
                     />
                   </a>
-                </div>
               </li>
             </ul>
           </div>
@@ -300,7 +293,7 @@
             </a>
           </div>
         </div>
-      </footer>-->
+      </footer>
     </div>
   </body>
 </html>
