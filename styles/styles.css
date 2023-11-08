@@ -439,6 +439,9 @@ li {
   min-width: 292px;
 }
 
+.button-view{
+  margin-bottom:32px;
+}
 
 .searched {
   margin: 0;
@@ -447,12 +450,13 @@ li {
 
 .catalog-products {
   display: flex;
-  align-items: center;
+  align-items:end;
 }
 
 .filter-button {
   display: flex;
   flex-direction: column;
+  max-height: 104px;
 }
 
 .catalog-filter-group {
