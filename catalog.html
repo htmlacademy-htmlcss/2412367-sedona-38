@@ -8,7 +8,7 @@
 
   <body>
     <div class="container-catalog">
-      <header class="inner-header">
+      <header class="main-header">
         <nav class="navigation">
           <!--<div class="navigation-container">-->
           <a class="navigation-link-logotype">
@@ -55,7 +55,9 @@
                 alt="Лайки"
               />
             </a>
-            <span>12</span>
+          </li>
+          <li class="navigation-item-user">
+            <span class="likes">12</span>
           </li>
           <li class="navigation-item-user">
             <a class="navigation-button-link" href="#"> Хочу сюда! </a>
@@ -189,7 +191,9 @@
                   </form>
                 </fieldset>
                 <div class="filter-button">
-                  <button class="button-small button-view" type="submit">Показать</button>
+                  <button class="button-small button-view" type="submit">
+                    Показать
+                  </button>
                   <button class="button-small button-cancelled" type="submit">
                     Сбросить
                   </button>
@@ -245,14 +249,14 @@
         <section class="catalog-results">
           <div class="catalog-results-container">
             <div class="hotel-card">
+              <img
+                class="hotel-card-image"
+                src="images/catalog/photo-of-hills-1.jpg"
+                width="300"
+                height="212"
+                alt="Вид из гостиницы Amara Resort & Spa"
+              />
               <a class="hotel-card-picture" href="product.html">
-                <img
-                  class="hotel-card-image"
-                  src="images/catalog/photo-of-hills-1.jpg"
-                  width="300"
-                  height="212"
-                  alt="Вид из гостиницы Amara Resort & Spa"
-                />
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </a>
               <div class="catalog-price">
@@ -260,8 +264,10 @@
                 <b class="price">От 4000 ₽</b>
               </div>
               <div class="action-card">
-                <a class="hotel-card-button" href="#">Подробнее</a>
-                <a class="hotel-card-button">В избранное</a>
+                <a class="hotel-card-button button-about" href="#">Подробнее</a>
+                <a class="hotel-card-button button-favorite" href="#"
+                  >В избранное</a
+                >
               </div>
               <div class="rating-card">
                 <ul class="stars-rating"></ul>
@@ -270,14 +276,14 @@
             </div>
 
             <div class="hotel-card">
+              <img
+                class="hotel-card-image"
+                src="images/catalog/photo-of-hills-2.jpg"
+                width="300"
+                height="212"
+                alt="Вид из гостиницы Villas at Poco Diablo"
+              />
               <a class="hotel-card-picture" href="product.html">
-                <img
-                  class="hotel-card-image"
-                  src="images/catalog/photo-of-hills-2.jpg"
-                  width="300"
-                  height="212"
-                  alt="Вид из гостиницы Villas at Poco Diablo"
-                />
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
               <div class="catalog-price">
@@ -285,8 +291,10 @@
                 <b class="price">От 5000 ₽</b>
               </div>
               <div class="action-card">
-                <a class="hotel-card-button" href="#">Подробнее</a>
-                <a class="hotel-card-button">В избранное</a>
+                <a class="hotel-card-button button-about" href="#">Подробнее</a>
+                <a class="hotel-card-button button-favorite-villas" href="#"
+                  >В избранное</a
+                >
               </div>
               <div class="rating-card">
                 <ul class="stars-rating"></ul>
@@ -295,14 +303,14 @@
             </div>
 
             <div class="hotel-card card-third">
+              <img
+                class="hotel-card-image"
+                src="images/catalog/photo-of-hills-3.jpg"
+                width="300"
+                height="212"
+                alt="Вид из гостиницы Desert Quail Inn"
+              />
               <a class="hotel-card-picture" href="product.html">
-                <img
-                  class="hotel-card-image"
-                  src="images/catalog/photo-of-hills-3.jpg"
-                  width="300"
-                  height="212"
-                  alt="Вид из гостиницы Desert Quail Inn"
-                />
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
               <div class="catalog-price">
@@ -310,8 +318,10 @@
                 <b class="price">От 2500 ₽</b>
               </div>
               <div class="action-card">
-                <a class="hotel-card-button" href="#">Подробнее</a>
-                <a class="hotel-card-button">В избранное</a>
+                <a class="hotel-card-button button-about" href="#">Подробнее</a>
+                <a class="hotel-card-button button-favorite" href="#"
+                  >В избранное</a
+                >
               </div>
               <div class="rating-card">
                 <ul class="stars-rating"></ul>
@@ -320,14 +330,14 @@
             </div>
 
             <div class="hotel-card">
+              <img
+                class="hotel-card-image"
+                src="images/catalog/photo-of-hills-4.jpg"
+                width="300"
+                height="212"
+                alt="Вид из гостиницы GreenTree Inn"
+              />
               <a class="hotel-card-picture" href="product.html">
-                <img
-                  class="hotel-card-image"
-                  src="images/catalog/photo-of-hills-4.jpg"
-                  width="300"
-                  height="212"
-                  alt="Вид из гостиницы GreenTree Inn"
-                />
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
               <div class="catalog-price">
@@ -335,8 +345,10 @@
                 <b class="price">От 1500 ₽</b>
               </div>
               <div class="action-card">
-                <a class="hotel-card-button" href="#">Подробнее</a>
-                <a class="hotel-card-button">В избранное</a>
+                <a class="hotel-card-button button-about" href="#">Подробнее</a>
+                <a class="hotel-card-button button-favorite" href="#"
+                  >В избранное</a
+                >
               </div>
               <div class="rating-card">
                 <ul class="stars-rating"></ul>
@@ -345,12 +357,24 @@
             </div>
           </div>
           <ul class="page-list">
-            <li class="page-list-item select-default">1</li>
-            <li class="page-list-item">2</li>
-            <li class="page-list-item">3</li>
-            <li class="page-list-item">4</li>
-            <li class="page-list-item space-page">...</li>
-            <li class="page-list-item">10</li>
+            <li class="page-list-item select-default">
+              <a class="page-list-link" href="#">1</a>
+            </li>
+            <li class="page-list-item">
+              <a class="page-list-link" href="#">2</a>
+            </li>
+            <li class="page-list-item">
+              <a class="page-list-link" href="#">3</a>
+            </li>
+            <li class="page-list-item">
+              <a class="page-list-link" href="#">4</a>
+            </li>
+            <li class="page-list-item space-page">
+              <a class="page-list-link" href="#">...</a>
+            </li>
+            <li class="page-list-item">
+              <a class="page-list-link" href="#">10</a>
+            </li>
           </ul>
         </section>
 
