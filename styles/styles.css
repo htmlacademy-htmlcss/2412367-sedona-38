@@ -63,6 +63,9 @@ li {
 
 .navigation-link-searched,.navigation-link-likes{
   display:block;
+  position: relative;
+  min-width:44px;
+  min-height:64px;
 }
 
 .navigation-link-searched{
@@ -73,16 +76,18 @@ li {
   padding: 24px 13px;
 }
 
+
+
 .likes{
   display:flex;
-  position: relative;
+  position: absolute;
   background: #7DB54F;
   font-size: 10px;
   line-height: 10px;
   color:#FFF;
   border-radius: 10px;
-  right:20px;
-  bottom:10px;
+  left:20px;
+  top:10px;
   min-width: 20px;
   min-height: 20px;
   justify-content: center;
@@ -100,6 +105,7 @@ li {
   text-transform: capitalize;
   text-align: center;
   padding: 20px 16px;
+  margin-left: 20px;
 }
 
 .navigation-link-user {
@@ -180,7 +186,6 @@ li {
   font-weight: 700;
   margin: 0;
   padding: 0;
-  margin-bottom: 62px;
   text-transform: uppercase;
 }
 
@@ -273,8 +278,12 @@ li {
 }
 
 .advantages-card-container {
+  display:flex;
+  flex-direction: column;
   padding: 81px 85px;
   height:100%;
+  gap:30px;
+  align-items: center;
 }
 
 .search {
@@ -698,4 +707,18 @@ font-weight: 700;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navigation-icon{
+  fill: #000;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin:auto;
+}
+
+.advantages-icon{
+  color:#83B3D3;
 }
