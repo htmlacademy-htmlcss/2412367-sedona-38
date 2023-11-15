@@ -81,136 +81,142 @@
         <section class="header-inner">
           <div class="header-inner-container">
             <header>
-
-            <h1 class="header-inner-title">Гостиницы Седона</h1>
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
-                  <svg
-                    class="breadcrumbs-icon"
-                    aria-hidden="true"
-                    focusable="false"
-                    width="12"
-                    height="12"
-                    viewBox="0 0 12 12"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
-                    />
-                    <path
-                      d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">Гостиницы</a>
-              </li>
-            </ul>
-
+              <h1 class="header-inner-title">Гостиницы Седона</h1>
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="index.html">
+                    <svg
+                      class="breadcrumbs-icon"
+                      aria-hidden="true"
+                      focusable="false"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
+                      />
+                      <path
+                        d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="#">Гостиницы</a>
+                </li>
+              </ul>
             </header>
 
-              <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-              <form
-                class="catalog-filter"
-                action="https://echo.htmlacademy.ru/"
-                method="get"
-                >
-                <fieldset class="catalog-filter-group catalog-filter-infrastructure">
-                  <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+            <form
+              class="catalog-filter"
+              action="https://echo.htmlacademy.ru/"
+              method="get"
+            >
+              <fieldset
+                class="catalog-filter-group catalog-filter-infrastructure"
+              >
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
 
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="checkbox"
-                      name="pool"
-                      checked
-                    />
+                <label class="control">
+                  <input
+                    class="control-input visually-hidden"
+                    type="checkbox"
+                    name="pool"
+                    checked
+                  />
+                  <span class="checkbox-decoration"></span>
+                  <span>Бассейн</span>
+                </label>
+                <label class="control">
+                  <input
+                    class="control-input visually-hidden"
+                    type="checkbox"
+                    name="parking"
+                    checked
+                  />
+                  <span class="checkbox-decoration"></span>
+                  <span>Парковка</span>
+                </label>
+                <label class="control">
+                  <input
+                    class="control-input visually-hidden"
+                    type="checkbox"
+                    name="wi-fi"
+                  />
+                  <span class="checkbox-decoration"></span>
+                  <span>WI-FI</span>
+                </label>
+              </fieldset>
 
-                    <span>Бассейн</span>
-                  </label>
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="checkbox"
-                      name="parking"
-                      checked
-                    />
+              <fieldset class="catalog-filter-group catalog-filter-home">
+                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <label class="control">
+                  <input
+                    class="control-input visually-hidden"
+                    type="radio"
+                    name="group-hotels"
+                    checked
+                  />
+                  <span class="radio-decoration"></span>
+                  <span>Гостиница</span>
+                </label>
 
-                    <span>Парковка</span>
-                  </label>
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi" />
+                <label class="control">
+                  <input
+                    class="control-input visually-hidden"
+                    type="radio"
+                    name="group-hotels"
+                  />
+                  <span class="radio-decoration"></span>
+                  <span>Мотель</span>
+                </label>
 
-                    <span>WI-FI</span>
-                  </label>
-                </fieldset>
+                <label class="control">
+                  <input
+                    class="control-input visually-hidden"
+                    type="radio"
+                    name="group-hotels"
+                  />
+                  <span class="radio-decoration"></span>
+                  <span>Апартаменты</span>
+                </label>
+              </fieldset>
 
-                <fieldset class="catalog-filter-group catalog-filter-home">
-                  <legend class="catalog-filter-title">Тип жилья:</legend>
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="radio"
-                      name="group-hotels"
-                      checked
-                    />
+              <fieldset class="catalog-filter-group-price">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <label class="min-price-fork-form">
+                  <input
+                    class="min-price-fork-input"
+                    type="text"
+                    value="0"
+                    name="min-price"
+                  />
+                  <span class="price-fork-text" tabindex="-1">от</span>
+                </label>
 
-                    Гостиница
-                  </label>
-
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="radio"
-                      name="group-hotels"
-                    />
-
-                    Мотель
-                  </label>
-
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="radio"
-                      name="group-hotels"
-                    />
-
-                    Апартаменты
-                  </label>
-                </fieldset>
-
-                <fieldset class="catalog-filter-group-price">
-                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                    <label class="min-price-fork-form">
-                      <input
-                        class="min-price-fork-input"
-                        type="text"
-                        value="0"
-                        name="min-price"
-                      />
-                    </label>
-
-                    <label class="max-price-fork-form">
-                      <input
-                        class="max-price-fork-input"
-                        type="text"
-                        value="10000"
-                        name="max-price"
-                      />
-                    </label>
-                </fieldset>
-                <div class="filter-button">
-                  <button class="button-small button-view" type="submit">
-                    Применить
-                  </button>
-                  <button class="button-small button-cancelled" type="reset">
-                    Сбросить
-                  </button>
-                </div>
-              </form>
+                <label class="max-price-fork-form">
+                  <input
+                    class="max-price-fork-input"
+                    type="text"
+                    value="10000"
+                    name="max-price"
+                  />
+                  <span class="price-fork-text" tabindex="-1">до</span>
+                </label>
+              </fieldset>
+              <div class="filter-button">
+                <button class="button-small button-view" type="submit">
+                  Применить
+                </button>
+                <button class="button-small button-cancelled" type="reset">
+                  Сбросить
+                </button>
+              </div>
+            </form>
           </div>
         </section>
 
@@ -285,7 +291,9 @@
                 >
               </div>
               <div class="rating-card">
-                <div class="stars-rating stars-of-product-4"><span class="visually-hidden">звезды</span></div>
+                <div class="stars-rating stars-of-product-4">
+                  <span class="visually-hidden">звезды</span>
+                </div>
                 <span>Рейтинг: 8,5</span>
               </div>
             </div>
@@ -314,7 +322,9 @@
                 >
               </div>
               <div class="rating-card">
-                <div class="stars-rating stars-of-product-4"><span class="visually-hidden">звезды</span></div>
+                <div class="stars-rating stars-of-product-4">
+                  <span class="visually-hidden">звезды</span>
+                </div>
                 <span>Рейтинг: 8,5</span>
               </div>
             </div>
@@ -343,7 +353,9 @@
                 >
               </div>
               <div class="rating-card">
-                <div class="stars-rating stars-of-product-3"><span class="visually-hidden">звезды</span></div>
+                <div class="stars-rating stars-of-product-3">
+                  <span class="visually-hidden">звезды</span>
+                </div>
                 <span>Рейтинг: 8,5</span>
               </div>
             </div>
@@ -372,7 +384,9 @@
                 >
               </div>
               <div class="rating-card">
-                <div class="stars-rating stars-of-product-2"><span class="visually-hidden">звезды</span></div>
+                <div class="stars-rating stars-of-product-2">
+                  <span class="visually-hidden">звезды</span>
+                </div>
                 <span>Рейтинг: 8,5</span>
               </div>
             </div>

@@ -578,6 +578,8 @@ body {
 .catalog-filter-group {
   display: flex;
   margin:0;
+  padding: 0;
+  border: none;
 }
 
 .catalog-filter-home{
@@ -675,13 +677,6 @@ body {
   flex-direction: column;
 }
 
-.control-input{
-  margin:0 16px 0 0;
-  padding:0;
-  min-width:20px;
-  min-height: 20px;
-}
-
 .control{
   margin-bottom: 16px;
 }
@@ -711,6 +706,22 @@ body {
   border-radius: 4px 0 0 4px;
   border:0;
   margin-right:2px;
+  color:#000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.min-price-fork-input:hover,
+.max-price-fork-input:hover{
+background-color:#E6E6E6 ;
+}
+
+.min-price-fork-input:focus,
+.max-price-fork-input:focus{
+background-color: #E6E6E6;
+box-shadow: inset 0 0 0 3px #82B3D3;
+outline: none;
 }
 
 .max-price-fork-input{
@@ -719,6 +730,24 @@ body {
   max-height: 48px;
   border-radius:0 4px 4px 0;
   border:0;
+  color:#000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.min-price-fork-form,.max-price-fork-form{
+  max-height: 48px;
+  position:relative;
+}
+
+.price-fork-text{
+  position:absolute;
+  line-height: 24px;
+  color:rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  right:0;
+  padding:12px 20px;
 }
 
 .subscribes-inner {
@@ -990,45 +1019,96 @@ font-weight: 700;
 
 .button-about:focus{
   background-color: #615048;
- }
+}
 
- .button-about:active{
+.button-about:active{
   background-color: #756157;
   color:rgba(255, 255, 255, 0.3);
- }
+}
 
- .breadcrumbs-link:hover{
+.breadcrumbs-link:hover{
   color:rgba(255, 255, 255, 0.6);
- }
+}
 
- .breadcrumbs-link:focus{
+.breadcrumbs-link:focus{
   color:#fff;
- }
+}
 
- .breadcrumbs-link:active{
+.breadcrumbs-link:active{
   color:rgba(255, 255, 255, 0.3);
- }
+}
 
- .stars-rating{
+.stars-rating{
   height:17px;
   margin:auto 0;
   width:89px;
   background-image: url("../images/icons/star.svg");
   background-repeat: space no-repeat;
- }
+}
 
- .stars-of-product-1{
+.stars-of-product-1{
   width:18px;
- }
+}
 
- .stars-of-product-2{
+.stars-of-product-2{
   width:42px;
- }
+}
 
- .stars-of-product-3{
+.stars-of-product-3{
   width:66px;
- }
+}
 
- .stars-of-product-4{
+.stars-of-product-4{
   width:89px;
- }
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.checkbox-decoration{
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.control-input:checked + .checkbox-decoration{
+  background-image: url("../images/icons/check-mark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.control:hover{
+opacity: 0.6;
+}
+
+.control:active{
+  opacity: 0.3;
+  }
+
+.checkbox-decoration:focus{
+  box-shadow: inset 0 0 0 3px #82B3D3;
+  outline: none;
+  }
+
+.radio-decoration{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.control-input:checked + .radio-decoration{
+  background-image: url("../images/icons/point.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
