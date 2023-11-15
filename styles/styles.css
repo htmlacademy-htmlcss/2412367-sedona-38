@@ -707,6 +707,7 @@ body {
   margin:0 70px 0 0;
   display: flex;
   border-style: none;
+  flex-wrap: wrap;max-width: 288px;
 }
 
 .min-price-fork-input{
@@ -715,7 +716,6 @@ body {
   max-height: 48px;
   border-radius: 4px 0 0 4px;
   border:0;
-  margin-right:2px;
   color:#000;
   font-weight: 700;
   font-size: 18px;
@@ -749,6 +749,7 @@ outline: none;
 .min-price-fork-form,.max-price-fork-form{
   max-height: 48px;
   position:relative;
+  margin-right:2px;
 }
 
 .price-fork-text{
@@ -1121,4 +1122,55 @@ opacity: 0.6;
   background-image: url("../images/icons/point.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.price-fork-container{
+  display:flex;
+  max-height: 48px;
+  max-width: 288px;
+}
+
+.range {
+  height:4px;
+  width: 287px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar{
+  height:4px;
+  width: 190px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.range-toggle{
+  width:20px;
+  height:20px;
+  position: relative;
+  bottom:15px;
+}
+
+.range-toggle:hover{
+  box-shadow: 25%;
+}
+
+.range-toggle:focus{
+  box-shadow: outset 0 0 0 3px #82B3D3;
+  outline: none;
+}
+
+.range-toggle:active{
+  border:  3px  solid #82B3D3;
+  outline: none;
+}
+
+.toggle-min{
+  border-radius: 5px;
+  border:0;
+}
+
+.toggle-max{
+  left: 159px;
+  border-radius: 5px;
+  border:0;
 }
