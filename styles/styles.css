@@ -240,9 +240,16 @@ body {
 
 .h3-title::after{
   content: " ";
+  display:block;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   min-width:60px;
   position: absolute;
+  left:85px;
+  margin: 30px 0 30px 0;
+}
+
+.h3-title-decoration::after{
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .reasons-explanations,
