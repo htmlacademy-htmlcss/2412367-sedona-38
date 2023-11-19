@@ -313,6 +313,52 @@
       </footer>
     </div>
 
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-form-container">
+              <label for="date-start">Дата Заезда:</label>
+              <input class="auth-form-field field" type="text" id="date-start" name="auth-login"
+                placeholder="27 апреля 2020">
+            </div>
+            <div class="modal-form-container">
+              <label for="date-end">Дата Заезда:</label>
+              <input class="auth-form-field field" type="text" id="date-end" name="auth-login"
+                placeholder="1 сентября 2023">
+            </div>
+            <div class="modal-form-container container-adults-childs">
+              <div class="adults">
+                <label for="adults">Взрослые:</label>
+                <input class="auth-form-field field-adults" type="text" id="adults" name="auth-login" placeholder="2">
+              </div>
+              <div class="childs">
+                <span class="form-label">
+                  <label for="childs">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" />
+                      </svg>
+                    </button>
+                  </span>
+                </span>
+                <input class="auth-form-field field-child" type="text" id="childs" name="auth-login" placeholder="2">
+              </div>
+            </div>
+            <button class="modal-search" type="submit">
+              <span>Найти</span>
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>
