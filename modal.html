@@ -313,6 +313,74 @@
       </footer>
     </div>
 
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"/>
+          </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-form-container">
+              <label for="date-start">Дата Заезда:</label>
+              <input class="auth-form-field field" type="text" id="date-start" name="date-start"
+                value="27 апреля 2020">
+                <p class="date-start-text">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="modal-form-container date-end-form">
+              <label for="date-end">Дата Выезда:</label>
+              <input class="auth-form-field field" type="text" id="date-end" name="date-end"
+                value="1 сентября 2023">
+                <p class="date-end-text">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="modal-form-container container-adults-childs">
+              <div class="adults">
+                <label for="adults">Взрослые:</label>
+                <div class="adults-button-container">
+                  <button class="minus-button" type="button"><svg class="minus" width="14" height="2" viewBox="0 0 14 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg></button>
+                <input class="auth-form-field field-adults" type="text" id="adults" name="adults" value="2">
+                <button class="plus-button" type="button"><svg class="plus" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                  </svg></button>
+              </div>
+              </div>
+              <div class="childs">
+                <span class="form-label">
+                  <label for="childs">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <div class="childs-button-container">
+                  <button class="minus-button" type="button"><svg class="minus" width="14" height="2" viewBox="0 0 14 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg></button>
+                <input class="auth-form-field field-child" type="text" id="childs" name="childs" value="2">
+                <button class="plus-button" type="button"><svg class="plus" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                  </svg></button>
+              </div>
+              </div>
+            </div>
+            <button class="modal-search" type="submit">
+              <span>Найти</span>
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>
